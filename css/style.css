@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tabs input{
+    display: none;
+
+}
+.tabs img{
+    width: 300px;
+    height: 330px;
+    padding-top: 180px;
+
+}
+.tabs{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#drinks:checked ~ .veget,
+#drinks:checked ~ .fruit,
+#drinks:checked ~ .household,
+#drinks:checked ~ .food {
+    display: none;
+}
+#veget:checked ~ .drinks,
+#veget:checked ~ .fruit,
+#veget:checked ~ .household,
+#veget:checked ~ .food {
+    display: none;
+}
+#fruit:checked ~ .drinks,
+#fruit:checked ~ .veget,
+#fruit:checked ~ .household,
+#fruit:checked ~ .food {
+    display: none;
+}
+#food:checked ~ .drinks,
+#food:checked ~ .veget,
+#food:checked ~ .household,
+#food:checked ~ .fruit {
+    display: none;
+}
+#household:checked ~ .drinks,
+#household:checked ~ .veget,
+#household:checked ~ .food,
+#household:checked ~ .fruit {
+    display: none;
+}
+#hero{
+    min-height: 100vh;
+    background: linear-gradient(20deg,black, #00a6ff,black) center;
+}
+.label{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+.label label{
+    padding: 10px 30px;
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: .4s;
+    cursor: pointer;
+
+}
+.label label:hover{
+    background: linear-gradient(10deg,goldenrod,yellow);
+    color: black;
+    border: 2px solid black;
+
+}
